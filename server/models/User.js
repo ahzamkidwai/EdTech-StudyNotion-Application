@@ -20,7 +20,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  password: {
+  confirmPassword: {
     type: String,
     required: true,
   },
@@ -52,4 +52,4 @@ const userSchema = mongoose.Schema({
   ],
 });
 
-module.exports = mongoose.model("User",userSchema);
+module.exports = mongoose.model("User", userSchema);
